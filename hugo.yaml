@@ -1,23 +1,23 @@
 baseURL: "https://ish-bindra.github.io/"
 languageCode: en-us
-title: Ishmeet's Blog
+title: Ishmeet Bindra
 theme: PaperModX
 
 params:
   env: production
   author: Ishmeet Bindra
   description: "Thoughts on software engineering, DevOps, and building systems at scale"
-  
+
   # Home page settings
-  mainSections: ["posts"]
+  mainSections: [ "posts" ]
   paginate: 5
 
   # Social links
   socialIcons:
-    - name: github
-      url: "https://github.com/ish-bindra"
-    - name: email
-      url: "mailto:your-email@example.com"
+  - name: github
+    url: "https://github.com/ish-bindra"
+  - name: email
+    url: "mailto:your-email@example.com"
 
   # Show reading time and word count
   ShowReadingTime: true
@@ -29,13 +29,14 @@ params:
   ShowRssButtonInSectionTermList: false
   disableSpecial1stPost: true
   hideFooter: true
-  
+
   # Comments (optional - you can enable later)
   comments: false
 
   # Appearance
   defaultTheme: auto
   disableThemeToggle: false
+  favicon: "favicon.ico"
 
   # Search
   fuseOpts:
@@ -45,23 +46,23 @@ params:
     distance: 1000
     threshold: 0.4
     minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content"]
+    keys: [ "title", "permalink", "summary", "content" ]
 
 # Menu
 menu:
   main:
-    - identifier: home
-      name: Home
-      url: /
-      weight: 10
-    - identifier: archive
-      name: Posts
-      url: /posts/
-      weight: 20
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 30
+  - identifier: home
+    name: Home
+    url: /
+    weight: 10
+  - identifier: archive
+    name: Posts
+    url: /posts/
+    weight: 20
+  - identifier: about
+    name: About
+    url: /about/
+    weight: 30
 
 # Taxonomies
 taxonomies:
@@ -72,9 +73,9 @@ taxonomies:
 # Output formats
 outputs:
   home:
-    - HTML
-    - RSS
-    - JSON
+  - HTML
+  - RSS
+  - JSON
 
 # Markup settings
 markup:
