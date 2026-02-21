@@ -1,0 +1,20 @@
+.footer-rss {
+  display: none;
+}
+
+.home-archive {
+  margin-top: 2.5rem;
+}
+
+.home-archive-link {
+  font-size: 1rem;
+}
+
+.type-about .post-title,
+.type-about .breadcrumbs {
+  display: none;
+}
+
+.comments-separator {
+  display: none;
+}

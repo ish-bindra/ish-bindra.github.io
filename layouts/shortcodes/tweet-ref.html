@@ -1,0 +1,19 @@
+<div class="tweet-ref">
+  {{- $url := .Get 0 -}}
+  From <a href="{{ $url }}">{{ strings.TrimPrefix "https://" $url }}</a>:
+
+  {{- $dnt := true -}}
+  {{- $query := querify "url" $url "dnt" $dnt -}}
+  {{- $request := printf "https://publish.twitter.com/oembed?%s" $query -}}
+  {{- $resource := resources.GetRemote $request -}}
+  {{- if $resource -}}
+    {{- $data := $resource | transform.Unmarshal -}}
+    {{- with $data.html -}}
+      {{- replaceRE "<script.+/script>" "" . | safeHTML -}}
+    {{- else -}}
+      <a href="{{ $url }}" rel="noopener" target="_blank">View on X</a>
+    {{- end -}}
+  {{- else -}}
+    <a href="{{ $url }}" rel="noopener" target="_blank">View on X</a>
+  {{- end -}}
+</div>
