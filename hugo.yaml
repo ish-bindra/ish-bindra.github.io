@@ -1,0 +1,90 @@
+baseURL: "https://ish-bindra.github.io/"
+languageCode: en-us
+title: Ishmeet's Blog
+theme: PaperModX
+
+params:
+  env: production
+  author: Ishmeet Bindra
+  description: "Thoughts on software engineering, DevOps, and building systems at scale"
+  
+  # Home page settings
+  homeInfoParams:
+    Title: "Hey there 👋"
+    Content: >
+      I'm Ishmeet, a software engineer focused on DevOps, infrastructure, and building reliable systems at scale.
+      
+      I write about things I've learned while working on real production systems — Docker, CI/CD pipelines, microservices, and the patterns that make distributed systems actually work.
+
+  # Social links
+  socialIcons:
+    - name: github
+      url: "https://github.com/ish-bindra"
+    - name: email
+      url: "mailto:your-email@example.com"
+
+  # Show reading time and word count
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  
+  # Comments (optional - you can enable later)
+  comments: false
+
+  # Appearance
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  # Search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# Menu
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 30
+
+# Taxonomies
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+# Output formats
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# Markup settings
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    lineNos: true
+    lineNumbersInTable: true
+    guessSyntax: true
