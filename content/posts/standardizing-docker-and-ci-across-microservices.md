@@ -1,5 +1,5 @@
 ---
-title: Standardizing Docker and CI Across 30+ Node.js Services
+title: Standardizing Docker and CI across Microservices
 date: 2026-02-17
 draft: false
 tags:
