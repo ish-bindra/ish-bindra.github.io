@@ -1,9 +1,14 @@
 ---
-title: "Building an AI-Powered Infrastructure Toolkit with MCP"
+title: Building an AI-Powered Infrastructure Toolkit with MCP
 date: 2026-03-13
-draft: false
-tags: [mcp, ai, infrastructure, devops]
-categories: [devops]
+draft: true
+tags:
+  - mcp
+  - ai
+  - infrastructure
+  - devops
+categories:
+  - devops
 ---
 
 When you're running a few dozen microservices, each with its own database, message queues, log indices, and Kubernetes deployments, the knowledge required to investigate a production issue is scattered across a lot of systems. Each system has its own auth, its own query language, its own UI. During an incident, an engineer has to context-switch between all of them — check pod health, search logs, query the database for stuck records, look at queue backlogs, find the relevant runbook, cross-reference recent deployments. Each step is a different tool and a different mental model.
