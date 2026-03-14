@@ -32,6 +32,7 @@ params:
 
   # Comments (optional - you can enable later)
   comments: false
+  useCustomAnalytics: true
 
   # Appearance
   defaultTheme: auto
