@@ -1,4 +1,4 @@
-baseURL: "https://ish-bindra.github.io/"
+baseURL: "https://ishmeetbindra.com/"
 languageCode: en-us
 title: Ishmeet Bindra
 theme: PaperModX
@@ -6,7 +6,7 @@ theme: PaperModX
 params:
   env: production
   author: Ishmeet Bindra
-  description: "Thoughts on software engineering, DevOps, and building systems at scale"
+  description: "Ishmeet Bindra — software engineer, Sydney"
 
   # Home page settings
   mainSections: [ "posts" ]
