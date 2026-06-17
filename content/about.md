@@ -16,4 +16,4 @@ I work on platform and infrastructure at Ordermentum. My job is making the syste
 
 I write here about things I find interesting, sometimes that’s engineering, sometimes it’s not.
 
-Find me on [LinkedIn](https://www.linkedin.com/in/ishbindra/), [GitHub](https://github.com/ish-bindra), or [ishmeebindra@outlook.com](mailto:ishmeebindra@outlook.com).
+Find me on [LinkedIn](https://www.linkedin.com/in/ishbindra/), [GitHub](https://github.com/ish-bindra), or [ishmeetbindra@outlook.com](mailto:ishmeetbindra@outlook.com).
